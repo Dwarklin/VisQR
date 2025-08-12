@@ -1,0 +1,27 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Circles/Shapes -->
+    <circle cx="150" cy="50" r="30" fill="#FF6B6B" opacity="0.2"/>
+    <circle cx="50" cy="150" r="40" fill="#4ECDC4" opacity="0.2"/>
+    <rect x="10" y="10" width="180" height="180" rx="90" fill="#A2D5F2" opacity="0.1"/>
+
+    <!-- Monitor -->
+    <rect x="40" y="60" width="120" height="80" rx="8" fill="#FFFFFF" stroke="#5A4FCF" stroke-width="4"/>
+    <rect x="55" y="75" width="90" height="10" rx="2" fill="#D1D1D1"/>
+    <rect x="55" y="90" width="70" height="10" rx="2" fill="#D1D1D1"/>
+    <rect x="55" y="105" width="80" height="10" rx="2" fill="#D1D1D1"/>
+    <rect x="55" y="120" width="60" height="10" rx="2" fill="#D1D1D1"/>
+
+    <!-- Monitor Stand -->
+    <path d="M90 140 L110 140 L100 160 L90 140 Z" fill="#5A4FCF"/>
+    <circle cx="100" cy="165" r="5" fill="#5A4FCF"/>
+
+    <!-- Code Brackets -->
+    <path d="M25 80 L35 90 L25 100" stroke="#5A4FCF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M25 100 L35 110 L25 120" stroke="#5A4FCF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M175 80 L165 90 L175 100" stroke="#5A4FCF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M175 100 L165 110 L175 120" stroke="#5A4FCF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Decorative Dots -->
+    <circle cx="38" cy="135" r="5" fill="#FF6B6B"/>
+    <circle cx="162" cy="65" r="5" fill="#FF6B6B"/>
+</svg>

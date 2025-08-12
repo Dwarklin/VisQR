@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="500" viewBox="0 0 600 500" fill="none">
+  <!-- Background shapes -->
+  <circle cx="300" cy="250" r="200" fill="#F0F0FF" />
+  <circle cx="150" cy="150" r="50" fill="#E6E6FF" />
+  <circle cx="450" cy="350" r="70" fill="#E6E6FF" />
+  
+  <!-- Computer/Device -->
+  <rect x="200" y="180" width="200" height="140" rx="5" fill="#6C63FF" />
+  <rect x="210" y="190" width="180" height="120" rx="2" fill="#FFFFFF" />
+  
+  <!-- Screen Content -->
+  <rect x="230" y="210" width="140" height="10" rx="2" fill="#E0E0E0" />
+  <rect x="230" y="230" width="100" height="10" rx="2" fill="#E0E0E0" />
+  <rect x="230" y="250" width="120" height="10" rx="2" fill="#E0E0E0" />
+  <rect x="230" y="270" width="80" height="10" rx="2" fill="#E0E0E0" />
+  
+  <!-- Device Stand -->
+  <path d="M280 320L260 350H340L320 320H280Z" fill="#6C63FF" />
+  <rect x="290" y="350" width="20" height="5" rx="2" fill="#6C63FF" />
+  
+  <!-- Decorative Elements -->
+  <circle cx="400" cy="150" r="15" fill="#F50057" />
+  <circle cx="200" cy="300" r="10" fill="#F50057" />
+  
+  <!-- Code Brackets -->
+  <path d="M150 220L130 250L150 280" stroke="#6C63FF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M450 220L470 250L450 280" stroke="#6C63FF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- Abstract Lines -->
+  <line x1="100" y1="200" x2="150" y2="200" stroke="#6C63FF" stroke-width="3" stroke-linecap="round" />
+  <line x1="450" y1="200" x2="500" y2="200" stroke="#6C63FF" stroke-width="3" stroke-linecap="round" />
+  <line x1="100" y1="300" x2="150" y2="300" stroke="#6C63FF" stroke-width="3" stroke-linecap="round" />
+  <line x1="450" y1="300" x2="500" y2="300" stroke="#6C63FF" stroke-width="3" stroke-linecap="round" />
+</svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300" fill="none">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#F8F9FA" />
+  
+  <!-- Fashion Store Background -->
+  <rect x="50" y="50" width="300" height="200" rx="10" fill="#FFF5F5" />
+  
+  <!-- Clothing Items -->
+  <!-- Dress -->
+  <path d="M120 80L100 100V180H140V100L120 80Z" fill="#F50057" />
+  <path d="M120 80L110 90H130L120 80Z" fill="#D10046" />
+  
+  <!-- Shirt -->
+  <rect x="170" y="90" width="60" height="80" rx="5" fill="#6C63FF" />
+  <path d="M170 90H230V110C230 110 215 120 200 120C185 120 170 110 170 110V90Z" fill="#5A52E0" />
+  
+  <!-- Pants -->
+  <path d="M280 90L260 100V180H300V100L280 90Z" fill="#333333" />
+  <rect x="260" y="90" width="40" height="10" rx="5" fill="#444444" />
+  
+  <!-- Hangers -->
+  <line x1="120" y1="80" x2="120" y2="60" stroke="#333333" stroke-width="2" />
+  <line x1="200" y1="90" x2="200" y2="60" stroke="#333333" stroke-width="2" />
+  <line x1="280" y1="90" x2="280" y2="60" stroke="#333333" stroke-width="2" />
+  <line x1="80" y1="60" x2="320" y2="60" stroke="#333333" stroke-width="2" />
+  
+  <!-- Price Tags -->
+  <circle cx="130" cy="150" r="10" fill="white" stroke="#333333" stroke-width="1" />
+  <text x="126" y="154" font-family="Arial" font-size="10" fill="#333333">$</text>
+  
+  <circle cx="210" cy="150" r="10" fill="white" stroke="#333333" stroke-width="1" />
+  <text x="206" y="154" font-family="Arial" font-size="10" fill="#333333">$</text>
+  
+  <circle cx="290" cy="150" r="10" fill="white" stroke="#333333" stroke-width="1" />
+  <text x="286" y="154" font-family="Arial" font-size="10" fill="#333333">$</text>
+  
+  <!-- Fashion Store Text -->
+  <rect x="100" y="230" width="200" height="40" rx="5" fill="#F50057" />
+  <text x="125" y="255" font-family="Arial" font-size="18" font-weight="bold" fill="white">Fashion Store</text>
+  
+  <!-- Decorative Elements -->
+  <circle cx="70" cy="70" r="8" fill="#6C63FF" />
+  <circle cx="330" cy="70" r="8" fill="#6C63FF" />
+  <circle cx="70" cy="230" r="8" fill="#6C63FF" />
+  <circle cx="330" cy="230" r="8" fill="#6C63FF" />
+</svg>

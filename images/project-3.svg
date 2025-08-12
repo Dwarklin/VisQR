@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300" fill="none">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#F8F9FA" />
+  
+  <!-- Dashboard Background -->
+  <rect x="50" y="50" width="300" height="200" rx="10" fill="#2D2D2D" />
+  
+  <!-- Dashboard Header -->
+  <rect x="50" y="50" width="300" height="40" rx="10" fill="#333333" />
+  <circle cx="70" cy="70" r="10" fill="#6C63FF" />
+  <rect x="90" y="65" width="80" height="10" rx="5" fill="#FFFFFF" opacity="0.7" />
+  <circle cx="320" cy="70" r="10" fill="#F50057" />
+  
+  <!-- Sidebar -->
+  <rect x="50" y="90" width="60" height="160" fill="#333333" />
+  <circle cx="80" cy="120" r="10" fill="#FFFFFF" opacity="0.7" />
+  <circle cx="80" cy="160" r="10" fill="#FFFFFF" opacity="0.7" />
+  <circle cx="80" cy="200" r="10" fill="#FFFFFF" opacity="0.7" />
+  
+  <!-- Main Content -->
+  <rect x="120" y="100" width="220" height="60" rx="5" fill="#444444" />
+  <rect x="130" y="110" width="140" height="10" rx="5" fill="#FFFFFF" opacity="0.7" />
+  <rect x="130" y="130" width="100" height="10" rx="5" fill="#FFFFFF" opacity="0.5" />
+  <rect x="130" y="150" width="120" height="5" rx="2.5" fill="#FFFFFF" opacity="0.3" />
+  
+  <!-- Charts -->
+  <rect x="120" y="170" width="105" height="70" rx="5" fill="#444444" />
+  <circle cx="172" cy="200" r="25" fill="none" stroke="#6C63FF" stroke-width="10" stroke-dasharray="40 60" />
+  
+  <rect x="235" y="170" width="105" height="70" rx="5" fill="#444444" />
+  <polyline points="245,220 260,200 275,210 290,180 305,190 320,170" stroke="#F50057" stroke-width="3" fill="none" />
+  
+  <!-- Dashboard Text -->
+  <rect x="100" y="230" width="200" height="40" rx="5" fill="#6C63FF" />
+  <text x="125" y="255" font-family="Arial" font-size="18" font-weight="bold" fill="white">Modern Dashboard</text>
+</svg>

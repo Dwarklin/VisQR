@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300" fill="none">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#F8F9FA" />
+  
+  <!-- Basketball Court Background -->
+  <rect x="50" y="50" width="300" height="200" rx="10" fill="#FF9800" opacity="0.2" />
+  
+  <!-- Basketball -->
+  <circle cx="200" cy="150" r="60" fill="#FF9800" />
+  <path d="M200 90C200 90 170 110 170 150C170 190 200 210 200 210" stroke="#333333" stroke-width="3" />
+  <path d="M200 90C200 90 230 110 230 150C230 190 200 210 200 210" stroke="#333333" stroke-width="3" />
+  <path d="M140 150H260" stroke="#333333" stroke-width="3" />
+  
+  <!-- HoopHaven Text -->
+  <rect x="100" y="230" width="200" height="40" rx="5" fill="#6C63FF" />
+  <text x="150" y="255" font-family="Arial" font-size="20" font-weight="bold" fill="white">HoopHaven</text>
+  
+  <!-- Decorative Elements -->
+  <circle cx="80" cy="80" r="10" fill="#F50057" />
+  <circle cx="320" cy="80" r="10" fill="#F50057" />
+  <circle cx="80" cy="220" r="10" fill="#F50057" />
+  <circle cx="320" cy="220" r="10" fill="#F50057" />
+</svg>

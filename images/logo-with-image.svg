@@ -1,0 +1,10 @@
+<svg width="250" height="50" viewBox="0 0 250 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Abstract Image Element (e.g., a stylized 'Q' or a pixelated design) -->
+    <rect x="10" y="15" width="20" height="20" rx="5" fill="#5A4FCF"/>
+    <circle cx="20" cy="25" r="8" fill="#FF6B6B"/>
+
+    <!-- Text Logo -->
+    <text x="40" y="35" font-family="'Segoe UI', Tahoma, Geneva, Verdana, sans-serif" font-size="24" font-weight="bold" fill="#333333">
+        VisQR <tspan fill="#5A4FCF">Creations</tspan>
+    </text>
+</svg>
