@@ -217,12 +217,4 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.classList.add('loaded');
     });
 
-    // Contact form submission handling
-    const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            // No e.preventDefault() here, let FormSubmit handle the submission
-            console.log('Form submitted!');
-        });
-    }
 });
