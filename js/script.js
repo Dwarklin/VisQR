@@ -199,6 +199,15 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+    // Contact form submission handling
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            console.log('Form submitted!');
+            // FormSubmit will handle the actual submission and redirection
+        });
+    }
     
     window.addEventListener('scroll', revealOnScroll);
     revealOnScroll(); // Initial check on page load
@@ -208,26 +217,12 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.classList.add('loaded');
     });
 
-    // Fix for declaration error and contact form handling
+    // Contact form submission handling
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             // No e.preventDefault() here, let FormSubmit handle the submission
-            
-            // Get form values
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const subject = document.getElementById('subject').value;
-            const message = document.getElementById('message').value;
-            
-            // Simple form validation (optional, FormSubmit also handles basic validation)
-            if (!name || !email || !subject || !message) {
-                alert('Please fill in all fields');
-                return;
-            }
-            
-            // FormSubmit will handle the actual submission to dwarklin@gmail.com
-            // and redirect to thankyou.html as configured in index.html
+            console.log('Form submitted!');
         });
     }
 });
