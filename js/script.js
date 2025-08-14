@@ -209,10 +209,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Fix for declaration error and contact form handling
-    const contactForm = document.getElementById('contact-form');
+    const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
+            // No e.preventDefault() here, let FormSubmit handle the submission
             
             // Get form values
             const name = document.getElementById('name').value;
@@ -220,27 +220,14 @@ document.addEventListener('DOMContentLoaded', function() {
             const subject = document.getElementById('subject').value;
             const message = document.getElementById('message').value;
             
-            // Simple form validation
+            // Simple form validation (optional, FormSubmit also handles basic validation)
             if (!name || !email || !subject || !message) {
                 alert('Please fill in all fields');
                 return;
             }
             
-            // Here you would typically send the form data to a server
-            // For demo purposes, we'll just show a success message
-            const submitButton = contactForm.querySelector('button[type="submit"]');
-            const originalText = submitButton.textContent;
-            
-            submitButton.disabled = true;
-            submitButton.textContent = 'Sending...';
-            
-            // Simulate form submission
-            setTimeout(() => {
-                alert('Thank you for your message! We will get back to you soon.');
-                contactForm.reset();
-                submitButton.disabled = false;
-                submitButton.textContent = originalText;
-            }, 1500);
+            // FormSubmit will handle the actual submission to dwarklin@gmail.com
+            // and redirect to thankyou.html as configured in index.html
         });
     }
-}); // End of DOMContentLoaded event listener
+});
