@@ -1,77 +1,80 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Custom cursor with smooth following effect
-    const cursorDot = document.querySelector('.cursor-dot');
-    const cursorOutline = document.querySelector('.cursor-outline');
-    
-    // Initialize cursor positions
-    let mouseX = 0;
-    let mouseY = 0;
-    let outlineX = 0;
-    let outlineY = 0;
-    let dotX = 0;
-    let dotY = 0;
-    
-    // Smoothing factor (lower = smoother but slower)
-    const smoothFactor = 0.15;
-    
-    // Update mouse position on move
-    window.addEventListener('mousemove', function(e) {
-        mouseX = e.clientX;
-        mouseY = e.clientY;
+    // Only enable for devices that are not mobile (e.g., screen width > 768px)
+    if (window.innerWidth > 768) {
+        const cursorDot = document.querySelector('.cursor-dot');
+        const cursorOutline = document.querySelector('.cursor-outline');
         
-        // The dot follows the cursor more closely
-        cursorDot.style.left = `${mouseX}px`;
-        cursorDot.style.top = `${mouseY}px`;
-    });
-    
-    // Animation loop for smooth cursor following
-    function animateCursor() {
-        // Calculate the distance between current position and target
-        let distX = mouseX - outlineX;
-        let distY = mouseY - outlineY;
+        // Initialize cursor positions
+        let mouseX = 0;
+        let mouseY = 0;
+        let outlineX = 0;
+        let outlineY = 0;
+        let dotX = 0;
+        let dotY = 0;
         
-        // Move a percentage of the distance (lerp)
-        outlineX += distX * smoothFactor;
-        outlineY += distY * smoothFactor;
+        // Smoothing factor (lower = smoother but slower)
+        const smoothFactor = 0.15;
         
-        // Apply the smooth position
-        cursorOutline.style.left = `${outlineX}px`;
-        cursorOutline.style.top = `${outlineY}px`;
+        // Update mouse position on move
+        window.addEventListener('mousemove', function(e) {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+            
+            // The dot follows the cursor more closely
+            cursorDot.style.left = `${mouseX}px`;
+            cursorDot.style.top = `${mouseY}px`;
+        });
         
-        // Continue the animation loop
-        requestAnimationFrame(animateCursor);
+        // Animation loop for smooth cursor following
+        function animateCursor() {
+            // Calculate the distance between current position and target
+            let distX = mouseX - outlineX;
+            let distY = mouseY - outlineY;
+            
+            // Move a percentage of the distance (lerp)
+            outlineX += distX * smoothFactor;
+            outlineY += distY * smoothFactor;
+            
+            // Apply the smooth position
+            cursorOutline.style.left = `${outlineX}px`;
+            cursorOutline.style.top = `${outlineY}px`;
+            
+            // Continue the animation loop
+            requestAnimationFrame(animateCursor);
+        }
+        
+        // Start the animation loop
+        animateCursor();
+
+        // Hide cursor when mouse leaves window
+        document.addEventListener('mouseleave', function() {
+            cursorDot.style.opacity = '0';
+            cursorOutline.style.opacity = '0';
+        });
+
+        document.addEventListener('mouseenter', function() {
+            cursorDot.style.opacity = '1';
+            cursorOutline.style.opacity = '1';
+        });
+
+        // Cursor effects on interactive elements
+        const interactiveElements = document.querySelectorAll('a, button, .project-card, .skill-items span, input, textarea');
+        
+        interactiveElements.forEach(element => {
+            element.addEventListener('mouseenter', () => {
+                cursorDot.style.transform = 'translate(-50%, -50%) scale(1.5)';
+                cursorOutline.style.transform = 'translate(-50%, -50%) scale(1.5)';
+                cursorOutline.style.borderColor = 'var(--secondary-color)';
+            });
+            
+            element.addEventListener('mouseleave', () => {
+                cursorDot.style.transform = 'translate(-50%, -50%) scale(1)';
+                cursorOutline.style.transform = 'translate(-50%, -50%) scale(1)';
+                cursorOutline.style.borderColor = 'var(--primary-color)';
+            });
+        });
     }
-    
-    // Start the animation loop
-    animateCursor();
-
-    // Hide cursor when mouse leaves window
-    document.addEventListener('mouseleave', function() {
-        cursorDot.style.opacity = '0';
-        cursorOutline.style.opacity = '0';
-    });
-
-    document.addEventListener('mouseenter', function() {
-        cursorDot.style.opacity = '1';
-        cursorOutline.style.opacity = '1';
-    });
-
-    // Cursor effects on interactive elements
-    const interactiveElements = document.querySelectorAll('a, button, .project-card, .skill-items span, input, textarea');
-    
-    interactiveElements.forEach(element => {
-        element.addEventListener('mouseenter', () => {
-            cursorDot.style.transform = 'translate(-50%, -50%) scale(1.5)';
-            cursorOutline.style.transform = 'translate(-50%, -50%) scale(1.5)';
-            cursorOutline.style.borderColor = 'var(--secondary-color)';
-        });
-        
-        element.addEventListener('mouseleave', () => {
-            cursorDot.style.transform = 'translate(-50%, -50%) scale(1)';
-            cursorOutline.style.transform = 'translate(-50%, -50%) scale(1)';
-            cursorOutline.style.borderColor = 'var(--primary-color)';
-        });
-    });
 
     // Mobile menu toggle
     const hamburger = document.querySelector('.hamburger');
