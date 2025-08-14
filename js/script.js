@@ -207,7 +207,9 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('load', function() {
         document.body.classList.add('loaded');
     });
-    // Fix for declaration error
+
+    // Fix for declaration error and contact form handling
+    const contactForm = document.getElementById('contact-form');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
@@ -242,4 +244,3 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 }); // End of DOMContentLoaded event listener
-

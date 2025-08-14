@@ -16,6 +16,7 @@ A modern, responsive portfolio website for VisQR Creations, showcasing web devel
 - HTML5
 - CSS3 (with modern features like CSS variables, flexbox, grid)
 - JavaScript (vanilla, no frameworks)
+- Node.js
 - SVG graphics for illustrations
 - Font Awesome for icons
 - Google Fonts for typography
